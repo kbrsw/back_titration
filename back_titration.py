@@ -2,6 +2,7 @@ import sys  # sys нужен для передачи argv в QApplication
 from PyQt5 import QtWidgets, QtGui
 import design  # Это наш конвертированный файл дизайна
 from pathlib import Path
+# ----libraries---
 
 class ExampleApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
     def __init__(self):
