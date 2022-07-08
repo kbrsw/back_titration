@@ -1,3 +1,4 @@
+# ----version 08072022 ---
 import sys  # sys нужен для передачи argv в QApplication
 from PyQt5 import QtWidgets, QtGui
 import design  # Это наш конвертированный файл дизайна
