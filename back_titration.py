@@ -3,7 +3,6 @@ from PyQt5 import QtWidgets, QtGui
 import design  # Это наш конвертированный файл дизайна
 from pathlib import Path
 # ----libraries---
-# --- This modification I did today ---
 
 class ExampleApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
     def __init__(self):
