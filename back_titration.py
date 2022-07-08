@@ -125,6 +125,7 @@ def main():
     window.show()  # Показываем окно
     app.exec_()  # и запускаем приложение
 
+# -????Exit
 
 if __name__ == '__main__':
     main()
