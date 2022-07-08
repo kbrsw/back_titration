@@ -67,7 +67,7 @@ class ExampleApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
         f.write(('\n' "pH" '\t' "(H+solid),eq/kg"))
         g.write('\n' "pH" '\t' "(OH-)consumed by reference,cmol/kg" '\t' "(OH-)consumed by sample,cmol/kg" '\t' "Surface charge, cmol/kg")
 
-
+    # Tournassat et al., 2004
     def pushButton1(self):
         a = float(self.lineEdit.text())
         Vtot = float(self.lineEdit_2.text())
@@ -90,7 +90,8 @@ class ExampleApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
         path = home + desktop + file
         f = open(path, 'a')
         f.write('\n' + str(pH) + '\t' + str(aH))
-
+    
+    # Duquette et al., 1993
     def pushButton2(self):
         Vo = float(self.lineEdit_17.text())
         Vsn = float(self.lineEdit_18.text())
@@ -114,12 +115,6 @@ class ExampleApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
         path1 = home + desktop + file1
         g = open(path1, 'a')
         g.write('\n' + str(pH1) + '\t' + str(qsam) + '\t' + str(qref) + '\t' + str(qsur))
-
-
-
-
-
-
 
 def main():
     app = QtWidgets.QApplication(sys.argv)  # Новый экземпляр QApplication
