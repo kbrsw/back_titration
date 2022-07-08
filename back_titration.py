@@ -56,6 +56,9 @@ class ExampleApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
         self.lineEdit_16.setText(str(0.30))
         self.lineEdit_20.setText(str(8.00))
 
+        self.new_method()
+
+    def new_method(self):
         home = str(Path.home())
         desktop = str("\Desktop")
         file = str("\dataMethod1.dat")
